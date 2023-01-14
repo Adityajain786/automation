@@ -1,0 +1,11 @@
+def defensive(x):
+    for a in range(7):
+       pause=a
+       for k in range(a,8):
+           if x[pause] < x[k]:
+              xq = x[pause]
+              x[pause] = x[k]
+              x[k] = xq
+x=[34,43,32,23,34,56,1]
+defensive(x)
+print(x)
